@@ -1,0 +1,35 @@
+/* Estilos generales para la aplicación web */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Colores de fondo */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos generales para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
