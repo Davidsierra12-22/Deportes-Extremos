@@ -1,1 +1,33 @@
-/* Este archivo está intencionadamente en blanco. */
+.seccion-registro {
+    border: 2px solid #ff4500;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.form-registro input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+}
+.form-registro button {
+    background: #ff4500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form-registro button:hover {
+    background: #ff6a00;
+}/* Este archivo está intencionadamente en blanco. */
