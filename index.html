@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deportes Extremos</title>
+    <title>Xtreme Sports - Adrenalina Pura</title>
+    <!-- Estilos base y de los integrantes -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="registro.css">
     <link rel="stylesheet" href="perfil.css">
     <link rel="stylesheet" href="busqueda.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Deportes Extremos</h1>
-        <nav>
-            <ul>
-                <li><a href="#registro">Registro</a></li>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#busqueda">Búsqueda</a></li>
-            </ul>
-        </nav>
+
+    <header class="header-global">
+        <h1>Xtreme Sports 🏄‍♂️🌋</h1>
+        <p>Tu portal de deportes al límite</p>
     </header>
-    <main>
-        <section id="registro">
-            <h2>Registro</h2>
-            <p>Aquí podrás registrarte para participar en deportes extremos.</p>
+
+    <main class="contenedor-principal">
+        
+        <!-- SECCIÓN LOPERA: REGISTRO -->
+        <section class="seccion-registro">
+            <h2>Únete a la Aventura</h2>
+            <form class="form-registro">
+                <input type="text" placeholder="Usuario Aventurero">
+                <input type="email" placeholder="Correo Electrónico">
+                <input type="password" placeholder="Contraseña">
+                <button type="submit">Registrarse</button>
+            </form>
         </section>
-        <section id="perfil">
-            <h2>Perfil</h2>
-            <p>Accede a tu perfil y gestiona tu información.</p>
+
+        <!-- SECCIÓN COBOS: PERFIL -->
+        <section class="seccion-perfil">
+            <h2>Tu Perfil Extremo</h2>
+            <div class="tarjeta-perfil">
+                <div class="avatar">👤</div>
+                <h3>David Sierra</h3>
+                <p>Nivel: Rider Experto</p>
+                <span class="badge">Rider Verificado</span>
+            </div>
         </section>
-        <section id="busqueda">
-            <h2>Búsqueda</h2>
-            <p>Busca eventos y actividades de deportes extremos.</p>
+
+        <!-- SECCIÓN SERGIO: BÚSQUEDA -->
+        <section class="seccion-busqueda">
+            <h2>Buscar Destinos</h2>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Busca tu próximo reto...">
+                <button>Buscar</button>
+            </div>
+            <div class="categorias">
+                <div class="tag">🛹 Skateboard</div>
+                <div class="tag">🪂 Parapente</div>
+                <div class="tag">🚲 BMX</div>
+            </div>
         </section>
+
     </main>
-    <footer>
-        <p>&copy; 2023 Deportes Extremos. Todos los derechos reservados.</p>
+
+    <footer class="footer-global">
+        <p>&copy; 2026 - Equipo: Lopera, Cobos, Sergio y David</p>
     </footer>
+
 </body>
 </html>

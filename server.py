@@ -1,18 +1,20 @@
-from flask import Flask, request, jsonify
+import http.server
+import socketserver
+import os
 
-app = Flask(__name__)
+PORT = 8000
 
-@app.route('/')
-def home():
-    return "Bienvenido a la aplicación de deportes extremos"
+# Asegura que el servidor siempre sirva los archivos desde la carpeta correcta
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-@app.route('/api/data', methods=['GET'])
-def get_data():
-    # Aquí puedes agregar la lógica para manejar las peticiones y devolver datos
-    data = {
-        "mensaje": "Datos de deportes extremos"
-    }
-    return jsonify(data)
+Handler = http.server.SimpleHTTPRequestHandler
 
-if __name__ == '__main__':
-    app.run(debug=True)
+print(f"🚀 Servidor extremo corriendo en: http://localhost:{PORT}")
+print("Presiona Ctrl+C para detener.")
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\n🛑 Servidor detenido.")
+        httpd.server_close()
